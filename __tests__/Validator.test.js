@@ -26,7 +26,7 @@ describe('validator module', () => {
       expect(nameValidator1.validate(dog)).toEqual('spot');
       expect(nameValidator2.validate(dog)).toEqual('spot');
       expect(() => nameValidator1.validate(dog2)).toThrowErrorMatchingSnapshot();
-      expect(() => nameValidator2.validate(dog2)).toThrowErrorMatchingSnapshot();
+      expect(nameValidator2.validate(dog2)).toBeNull;
       expect(nameValidator1.validate(dog3)).toEqual('3.14159');
       expect(nameValidator2.validate(dog3)).toEqual('3.14159');
     });
