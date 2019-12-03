@@ -15,12 +15,12 @@ const colorValidator = new Validator('color', {
   required: true
 });
   
-  const dog = {
-    name: 'spot',
-    age: '5',
-    weight: '20 lbs'
-  };
+const dog = {
+  name: 'spot',
+  age: '5',
+  weight: '20 lbs'
+};
   
-  nameValidator.validate(dog) // returns 'spot'
-  age.validate(dog) // returns 5
-  colorValidator.validate(dog) // throws error
+nameValidator.validate(dog) // returns 'spot'
+ageValidator.validate(dog) // returns 5
+colorValidator.validate(dog) // throws error
