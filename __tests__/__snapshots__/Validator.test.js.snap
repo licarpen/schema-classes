@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validator module validate method takes an object and returns a fields value 1`] = `undefined`;
+
+exports[`validator module validate method takes an object and returns a fields value 2`] = `undefined`;

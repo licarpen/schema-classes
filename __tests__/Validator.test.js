@@ -7,7 +7,7 @@ const dog = {
 };
 
 const dog2 = {
-  age: two,
+  age: 'two',
   weight: 20
 };
 
@@ -25,14 +25,10 @@ describe('validator module', () => {
     it('takes an object and returns a fields value', () => {
       expect(nameValidator1.validate(dog)).toEqual('spot');
       expect(nameValidator2.validate(dog)).toEqual('spot');
-      expect(nameValidator1.validate(dog2)).toThrowErrorMatchingSnapshot();
-      expect(nameValidator2.validate(dog2)).toThrowErrorMatchingSnapshot();
+      expect(() => nameValidator1.validate(dog2)).toThrowErrorMatchingSnapshot();
+      expect(() => nameValidator2.validate(dog2)).toThrowErrorMatchingSnapshot();
       expect(nameValidator1.validate(dog3)).toEqual('3.14159');
       expect(nameValidator2.validate(dog3)).toEqual('3.14159');
-    });
-
-    it('validate method can take an object and throw an error', () => {
-      expect(isString('hi')).toBeTruthy();
     });
   });
 });
