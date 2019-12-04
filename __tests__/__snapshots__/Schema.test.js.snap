@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`schema module validate method for schema takes an object and returns a fields value 1`] = `"Cannot cast >>pi<< to Number"`;
