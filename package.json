@@ -14,8 +14,7 @@
   },
   "scripts": {
     "test": "jest --verbose --coverage",
-    "test: watch": "npm run test -- --watchAll",
-    "lint": "eslint '**/*.js" 
+    "test: watch": "npm run test -- --watchAll"  
   },
   "repository": {
     "type": "git",
